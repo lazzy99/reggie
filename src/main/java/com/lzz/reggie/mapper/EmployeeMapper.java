@@ -2,6 +2,7 @@ package com.lzz.reggie.mapper;
 
 import com.lzz.reggie.entity.Employee;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
@@ -10,7 +11,9 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  *
  * @author testjava
  * @since 2023-02-22
+ *
  */
+@Mapper
 public interface EmployeeMapper extends BaseMapper<Employee> {
 
 }
