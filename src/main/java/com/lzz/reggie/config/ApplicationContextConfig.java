@@ -11,7 +11,8 @@ import org.springframework.context.annotation.Import;
 @Import({WebMvcConfig.class,SwaggerConfig.class})
 public class ApplicationContextConfig {
 
-    //配置mybatis-plus分页插件 TODO
+    //配置mybatis-plus分页插件
+    @Bean
     public PaginationInterceptor paginationInterceptor(){
         return new PaginationInterceptor();
     }

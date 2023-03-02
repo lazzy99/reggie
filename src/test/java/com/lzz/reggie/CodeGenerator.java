@@ -28,7 +28,7 @@ public class CodeGenerator {
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
         gc.setOutputDir("E:\\练习项目\\SpringBoot\\reggie" + "/src/main/java");
-        gc.setAuthor("testjava");
+        gc.setAuthor("lazzy");
         gc.setOpen(false); //生成后是否打开资源管理器
         gc.setFileOverride(false); //重新生成时文件是否覆盖
         gc.setServiceName("%sService");	//去掉Service接口的首字母I
@@ -50,7 +50,7 @@ public class CodeGenerator {
         // 4、包配置
         PackageConfig pc = new PackageConfig();
         pc.setModuleName("reggie"); //模块名
-        pc.setParent("com.lzz.reggie");
+        pc.setParent("com.lzz");
         pc.setController("controller");
         pc.setEntity("entity");
         pc.setService("service");
@@ -59,7 +59,7 @@ public class CodeGenerator {
 
         // 5、策略配置
         StrategyConfig strategy = new StrategyConfig();
-        strategy.setInclude("user","employee");
+        strategy.setInclude("dish_flavor");
         strategy.setNaming(NamingStrategy.underline_to_camel);//数据库表映射到实体的命名策略
         strategy.setTablePrefix(pc.getModuleName() + "_"); //生成实体时去掉表前缀
 
